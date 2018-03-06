@@ -2,14 +2,14 @@
 declared-services:
   my-conversation-service:
     label: conversation
-    plan: free
+    plan: lite
 applications:
-- name: conversation-simple
+- name: resc-mobile
   command: npm start
   path: .
   memory: 256M
   instances: 1
   services:
-  - my-conversation-service
+  - Conversation-WatBot
   env:
     NPM_CONFIG_PRODUCTION: false
